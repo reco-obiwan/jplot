@@ -1,4 +1,4 @@
-package main // import "github.com/rs/jplot"
+package main // import "github.com/reco-obiwan/jplot"
 
 import (
 	"flag"
@@ -12,9 +12,9 @@ import (
 
 	"github.com/monochromegane/terminal"
 
-	"github.com/rs/jplot/data"
-	"github.com/rs/jplot/graph"
-	"github.com/rs/jplot/term"
+	"github.com/reco-obiwan/jplot/data"
+	"github.com/reco-obiwan/jplot/graph"
+	"github.com/reco-obiwan/jplot/term"
 )
 
 func main() {

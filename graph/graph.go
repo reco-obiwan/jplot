@@ -5,7 +5,7 @@ import (
 	"math"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/rs/jplot/data"
+	"github.com/reco-obiwan/jplot/data"
 	chart "github.com/wcharczuk/go-chart/v2"
 	"github.com/wcharczuk/go-chart/v2/drawing"
 )

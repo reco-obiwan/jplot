@@ -6,7 +6,7 @@ import (
 	"image/png"
 	"io"
 
-	"github.com/rs/jplot/data"
+	"github.com/reco-obiwan/jplot/data"
 	chart "github.com/wcharczuk/go-chart/v2"
 )
 
