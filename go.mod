@@ -1,4 +1,4 @@
-module github.com/rs/jplot
+module github.com/reco-obiwan/jplot
 
 go 1.19
 

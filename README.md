@@ -1,4 +1,5 @@
 # jplot
+
 [![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/rs/jplot/master/LICENSE)
 
 Jplot tracks expvar-like (JSON) metrics and plot their evolution over time right into your iTerm2 terminal (or DRCS Sixel Graphics).
@@ -30,7 +31,7 @@ brew install rs/tap/jplot
 From source:
 
 ```
-go install github.com/rs/jplot@latest
+go install github.com/reco-obiwan/jplot@latest
 ```
 
 This tool does only work with [iTerm2](https://www.iterm2.com), or terminals support DRCS Sixel Graphics.
@@ -72,7 +73,6 @@ Note: the `counter:` prefix instructs jplot to compute the difference between th
 
 ![](doc/dual.png)
 
-
 Or create several graphs by providing groups of fields as separate arguments; each argument creates a new graph:
 
 ```
@@ -88,8 +88,9 @@ Each positional arguments given to jplot create a stacked graph with the specifi
 In addition, each value path can be prefixed with options separated from the path by a column. Several options can be used for the same command by separating them with a comma like so: `option1,option2:value.path`.
 
 Supported options are:
-* `counter`: Computes the difference with the last value. The value must increase monotonically.
-* `marker`: When the value is none-zero, a vertical line is drawn.
+
+- `counter`: Computes the difference with the last value. The value must increase monotonically.
+- `marker`: When the value is none-zero, a vertical line is drawn.
 
 ## Recipes
 
@@ -128,11 +129,11 @@ echo 'GET http://localhost:8080' | \
 
 ### Supported Terminals
 
-* [xterm](http://invisible-island.net/xterm/)
-* [iTerm2](https://www.iterm2.com/) on OSX
-* [mintty](https://mintty.github.io/) on UNIX OSs via SSH
-* [mlterm](https://sourceforge.net/projects/mlterm/) on Linux and Windows
-* [RLogin](http://nanno.dip.jp/softlib/man/rlogin/) on Windows
-* [yaft](http://uobikiemukot.github.io/yaft/) on Linux console
-* [yaft-android](https://github.com/uobikiemukot/yaft-android) on Android
-* [Tanasinn](http://saitoha.github.io/tanasinn/) on Firefox/Thunderbird
+- [xterm](http://invisible-island.net/xterm/)
+- [iTerm2](https://www.iterm2.com/) on OSX
+- [mintty](https://mintty.github.io/) on UNIX OSs via SSH
+- [mlterm](https://sourceforge.net/projects/mlterm/) on Linux and Windows
+- [RLogin](http://nanno.dip.jp/softlib/man/rlogin/) on Windows
+- [yaft](http://uobikiemukot.github.io/yaft/) on Linux console
+- [yaft-android](https://github.com/uobikiemukot/yaft-android) on Android
+- [Tanasinn](http://saitoha.github.io/tanasinn/) on Firefox/Thunderbird

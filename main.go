@@ -144,7 +144,7 @@ func render(dash graph.Dash, rows int) {
 		fatal("Cannot get window size: ", err)
 	}
 	width, height := size.Width, size.Height
-	fmt.Printf("%v, %v", width, height)
+	//fmt.Printf("%v, %v", width, height)
 
 	if rows > 0 {
 		height = size.Height / size.Row * rows

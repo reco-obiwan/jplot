@@ -17,18 +17,17 @@ builds:
       - v2
       - v3
 universal_binaries:
-  - 
-    name_template: '{{.ProjectName}}'
+  - name_template: "{{.ProjectName}}"
 checksum:
-  name_template: 'checksums.txt'
+  name_template: "checksums.txt"
 snapshot:
   name_template: "{{ incpatch .Version }}_next"
 changelog:
   sort: asc
   filters:
     exclude:
-      - '^docs:'
-      - '^test:'
+      - "^docs:"
+      - "^test:"
 brews:
   - tap:
       owner: rs
@@ -39,9 +38,8 @@ brews:
     commit_author:
       name: Olivier Poitrey
       email: rs@rhapsodyk.net
-    homepage: https://github.com/rs/jplot
+    homepage: https://github.com/reco-obiwan/jplot
     description: iTerm2 expvar/JSON monitoring tool
-
 
 release:
   name_template: "{{.ProjectName}}-v{{.Version}}"
