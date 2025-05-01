@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/monochromegane/terminal"
+
 	"github.com/rs/jplot/data"
 	"github.com/rs/jplot/graph"
 	"github.com/rs/jplot/term"
@@ -143,13 +144,15 @@ func render(dash graph.Dash, rows int) {
 		fatal("Cannot get window size: ", err)
 	}
 	width, height := size.Width, size.Height
+	fmt.Printf("%v, %v", width, height)
+
 	if rows > 0 {
 		height = size.Height / size.Row * rows
 	} else {
 		rows = size.Row
 	}
 	// Use iTerm2 image display feature.
-	term := term.NewImageWriter(width, height)
+	term := term.NewImageWriter(width*2, height*2)
 	defer term.Close()
 	if err := dash.Render(term, width, height); err != nil {
 		fatal(fmt.Sprintf("cannot render graph: %v", err.Error()))
